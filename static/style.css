@@ -1,0 +1,129 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f4f6f9;
+  color: #222;
+}
+
+/* NAVBAR IDX STYLE */
+.navbar {
+  background: #b30000;
+  padding: 20px;
+  text-align: center;
+  color: white;
+}
+
+.navbar h2 {
+  margin: 0;
+  font-size: 26px;
+}
+
+.navbar p {
+  margin: 5px 0 0;
+  font-size: 14px;
+  opacity: 0.9;
+}
+
+/* CONTAINER */
+.container {
+  width: 90%;
+  max-width: 950px;
+  margin: 30px auto;
+}
+
+/* CARD */
+.card {
+  background: white;
+  padding: 25px;
+  border-radius: 14px;
+  box-shadow: 0px 4px 12px rgba(0,0,0,0.1);
+  margin-bottom: 25px;
+}
+
+.card h1 {
+  margin-top: 0;
+  color: #b30000;
+}
+
+.card h2 {
+  margin-top: 0;
+  color: #222;
+}
+
+/* FORM */
+input {
+  width: 70%;
+  padding: 12px;
+  border-radius: 10px;
+  border: 1px solid #ddd;
+  outline: none;
+}
+
+button {
+  padding: 12px 18px;
+  border: none;
+  border-radius: 10px;
+  background: #b30000;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  margin-left: 8px;
+}
+
+button:hover {
+  background: #800000;
+}
+
+/* TABLE */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 15px;
+}
+
+th {
+  background: #f0f0f0;
+  padding: 12px;
+  text-align: center;
+}
+
+td {
+  padding: 12px;
+  text-align: center;
+  border-bottom: 1px solid #eee;
+}
+
+tr:hover {
+  background: #fafafa;
+}
+
+/* SIGNAL BADGE */
+.badge {
+  padding: 6px 14px;
+  border-radius: 20px;
+  font-weight: bold;
+  font-size: 13px;
+}
+
+.buy {
+  background: #d4f8d4;
+  color: green;
+}
+
+.sell {
+  background: #ffd6d6;
+  color: red;
+}
+
+/* RESPONSIVE */
+@media(max-width: 600px) {
+  input {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  button {
+    width: 100%;
+    margin-left: 0;
+  }
+}

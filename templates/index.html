@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>IDX Stock Analyzer</title>
+
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+
+  <!-- NAVBAR -->
+  <header class="navbar">
+    <h2>IDX Stock Analyzer</h2>
+    <p>Dashboard Buy/Sell Saham Indonesia</p>
+  </header>
+
+  <div class="container">
+
+    <!-- INPUT CARD -->
+    <div class="card">
+      <h1>Analisis Saham</h1>
+      <p>Masukkan kode saham Indonesia (contoh: BBCA, TLKM, ANTM)</p>
+
+      <form method="POST">
+        <input type="text" name="symbols"
+          placeholder="BBCA, TLKM, ANTM"
+          required>
+
+        <button type="submit">Analyze</button>
+      </form>
+    </div>
+
+    {% if stocks %}
+    <!-- TABLE CARD -->
+    <div class="card">
+      <h2>Laporan Saham</h2>
+
+      <table>
+        <tr>
+          <th>Kode</th>
+          <th>Harga</th>
+          <th>Trend</th>
+          <th>Signal</th>
+        </tr>
+
+        {% for stock in stocks %}
+        <tr>
+          <td>{{ stock.symbol }}</td>
+          <td>Rp {{ stock.price }}</td>
+          <td>{{ stock.trend }}</td>
+          <td>
+            <span class="badge {{ 'buy' if 'BUY' in stock.signal else 'sell' }}">
+              {{ stock.signal }}
+            </span>
+          </td>
+        </tr>
+        {% endfor %}
+      </table>
+    </div>
+
+    <!-- CHART CARD -->
+    <div class="card">
+      <h2>Grafik Saham</h2>
+      {{ chart|safe }}
+    </div>
+    {% endif %}
+
+  </div>
+
+</body>
+</html>
