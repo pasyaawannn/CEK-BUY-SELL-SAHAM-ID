@@ -1,6 +1,7 @@
 # 📊 IDX Stock Buy/Sell Report Web App
 
 IDX Stock Buy/Sell Report adalah aplikasi web sederhana berbasis **Python Flask** yang membantu pengguna melakukan pengecekan harga saham Indonesia secara cepat, serta menampilkan laporan rekomendasi dasar **Buy atau Sell**.
+
 Project ini dibuat sebagai latihan membangun web financial dashboard dengan kombinasi backend Python dan frontend HTML/CSS.
 
 ---
