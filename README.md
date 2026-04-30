@@ -6,7 +6,7 @@ Project ini dibuat sebagai latihan membangun web financial dashboard dengan komb
 
 ---
 
-## 🚀 Tentang Project
+## 🚀 Tentang Project.
 
 Di tengah kondisi market yang kadang bullish, kadang bearish, investor butuh tools cepat untuk melihat pergerakan harga saham.
 Aplikasi ini memungkinkan pengguna untuk:
